@@ -9,7 +9,7 @@
   <p align="center">
     A website for a Vintage Car Museum.
     <br />
-    <a href="https://afrokk.github.io/Vintage-Autohaus/"><strong>Check it out! »</strong></a>
+    <a href="https://afrokk.github.io/Vintage-Autohaus/" target="_blank"><strong>Check it out! »</strong></a>
     <br />
   </p>
 </div>
