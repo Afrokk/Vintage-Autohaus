@@ -449,6 +449,9 @@ footer a:hover {
   #upcomingEvents {
     font-size: 2.5em;
   }
+  #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner {
+    font-size: 0.4em;
+  }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner .caoursel-item {
     color: white;
   }
@@ -458,7 +461,6 @@ footer a:hover {
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner p {
     display: none;
-    font-size: 0.4em;
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner a {
     font-size: 3em;
