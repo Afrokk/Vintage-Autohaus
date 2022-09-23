@@ -449,9 +449,6 @@ footer a:hover {
   #upcomingEvents {
     font-size: 2.5em;
   }
-  #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner {
-    font-size: 0.4em;
-  }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner .caoursel-item {
     color: white;
   }
@@ -461,6 +458,7 @@ footer a:hover {
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner p {
     display: none;
+    font-size: 0.4em;
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner a {
     font-size: 3em;
@@ -494,7 +492,7 @@ footer a:hover {
     filter: grayscale(0%);
   }
   #featuredCars .featuredCarsPara {
-    font-size: 0.7em;
+    font-size: 0.8em;
     padding-bottom: 15px;
   }
   #heroImage {
@@ -508,9 +506,6 @@ footer a:hover {
     align-items: center;
     font-family: "Yellowtail", cursive;
   }
-  #carouselExampleCaptions {
-    font-size: 0.7em;
-  }
   #carouselExampleCaptions button {
     display: none;
   }
@@ -523,6 +518,7 @@ footer a:hover {
   }
   #carouselExampleCaptions p {
     display: none;
+    font-size: 0.7em;
   }
   #carouselExampleCaptions a {
     font-size: 1.9em !important;
@@ -537,7 +533,7 @@ footer a:hover {
     font-size: 1.5em;
   }
   .callToAction .sectionCTA {
-    font-size: 0.7em;
+    font-size: 0.9em;
   }
   #memberSection .display-5 {
     font-size: 2.2em;
@@ -550,29 +546,29 @@ footer a:hover {
     padding-top: 0px;
   }
   #formPara {
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: black;
   }
   #footerMainNav #footerNav {
     border-right: none;
     border-bottom: 0.5px solid rgba(84, 84, 84, 0.4901960784);
   }
-  #footerMainNav #socials {
+  #footerMainNav #footerNav #socials {
     padding-bottom: 25px;
   }
-  #footerMainNav #footerNavHeading {
+  #footerMainNav #footerNav #footerNavHeading {
     font-size: 1em;
   }
-  #footerMainNav #footerNav ul li a {
+  #footerMainNav #footerNav #footerNav ul li a {
     font-size: 0.8em;
   }
-  #footerMainNav #footerLogo h2 {
+  #footerMainNav #footerNav #footerLogo h2 {
     font-size: 3em;
   }
-  #footerMainNav #address {
+  #footerMainNav #footerNav #address {
     font-size: 0.8em;
   }
-  #footerMainNav #contact {
+  #footerMainNav #footerNav #contact {
     font-size: 0.8em;
   }
 }/*# sourceMappingURL=styles.bundle.css.map */
