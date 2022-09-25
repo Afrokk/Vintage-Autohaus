@@ -60,7 +60,6 @@ Some of the things I'd like to do with this project, as I work on it:
 - [ ] Complete About Page.
 - [ ] Complete Tickets Page.
 - [ ] Complete Venue Page.
-- [ ] Complete Tickets Page.
 
 
 ## Contact
