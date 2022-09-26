@@ -56,10 +56,10 @@ Here's a look at the design of the website on different devices.
 Some of the things I'd like to do with this project, as I work on it:
 
 - [x] Complete Home Page.
-- [x] Optimize.
 - [ ] Complete About Page.
 - [ ] Complete Tickets Page.
 - [ ] Complete Venue Page.
+- [ ] Optimize.
 
 
 ## Contact
