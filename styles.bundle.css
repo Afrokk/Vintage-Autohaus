@@ -1,8 +1,15 @@
+header #navTickets {
+  border-bottom: 1px solid black;
+}
 header #navTickets a {
   color: black;
 }
 header #navTickets #buyTickets {
   display: none;
+}
+
+#navTicketsIcon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 #navTickets.scrolled {
@@ -11,6 +18,9 @@ header #navTickets #buyTickets {
 }
 #navTickets.scrolled a {
   color: white;
+}
+#navTickets.scrolled #navTicketsIcon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 #ticketsHText {
@@ -26,10 +36,8 @@ header #navTickets #buyTickets {
   font-size: 1em;
 }
 #ticketsHText #ticketsHAlert {
-  margin-right: 20vh;
-  margin-left: 20vh;
-  border-radius: 20px;
-  background-color: black;
+  border-radius: 15px;
+  background-color: darkred;
   color: white;
 }
 
@@ -37,38 +45,140 @@ header #navTickets #buyTickets {
   margin-top: 2rem;
   margin-bottom: 1rem;
   background-color: white;
-  padding-right: 20vh;
-  padding-left: 20vh;
-  justify-content: center;
-  align-text: center;
 }
 .PanelSectionContainer .PanelSection {
   border-radius: 20px;
   background-color: black;
   color: white;
-  padding: 35px 5px 50px 35px;
+}
+.PanelSectionContainer .PanelSection button {
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  background-color: transparent;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border: 1.5px solid white;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.PanelSectionContainer .PanelSection button:hover {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
 }
 .PanelSectionContainer .PanelSection div {
-  margin: 20px;
-  border-radius: 20px;
+  padding: 20px;
+  border-radius: 20px 0px 0px 20px;
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.3s ease-in-out;
 }
 .PanelSectionContainer .PanelSection div:hover {
-  background-color: lightblue;
+  background-color: #577ae3;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.PanelSectionContainer .PanelSection div:nth-child(2) {
+  border-radius: 0px 0px 0px 0px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.PanelSectionContainer .PanelSection div:nth-child(2):hover {
+  background-color: #5ebec0;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+.PanelSectionContainer .PanelSection div:nth-child(3) {
+  border-radius: 0px 20px 20px 0px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.PanelSectionContainer .PanelSection div:nth-child(3):hover {
+  background-color: #c92538;
+  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .PanelSectionContainer .PanelSection h2 {
+  font-weight: 800;
   font-size: 2em;
 }
+.PanelSectionContainer .PanelSection h3 {
+  font-weight: 800;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+}
 .PanelSectionContainer .PanelSection h4 {
-  font-size: 1.3em;
+  font-weight: 300;
+  font-size: 0.9em;
 }
 .PanelSectionContainer .PanelSection ul {
+  font-size: 1em;
   list-style: none;
   padding: 0px;
 }
+.PanelSectionContainer .PanelSection ul li {
+  padding: 10px;
+  border-bottom: 0.5px solid rgba(84, 84, 84, 0.0901960784);
+}
+.PanelSectionContainer .PanelSection ul li:first-child {
+  border-top: 0.5px solid rgba(84, 84, 84, 0.0901960784);
+}
 
+#homeButton {
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  padding-top: 15px;
+  padding-left: 0px;
+  letter-spacing: 0.1em;
+  transition: 0.2s ease-in-out;
+}
+#homeButton:hover {
+  background-color: transparent;
+  color: red;
+  transform: translateX(-5px);
+}
+
+@media (max-width: 768px) {
+  #ticketsHText #ticketsHHero {
+    font-size: 2.5em;
+  }
+  #ticketsHText #ticketsHAlert {
+    font-size: 0.9em;
+  }
+  #panelID .PanelSection {
+    margin: 20px auto;
+  }
+  #panelID .PanelSection div {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    background-color: #577ae3;
+    border-radius: 20px 20px 0px 0px;
+  }
+  #panelID .PanelSection div:nth-child(2) {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    background-color: #5ebec0;
+    border-radius: 0px 0px 0px 0px;
+  }
+  #panelID .PanelSection div:nth-child(3) {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    background-color: #c92538;
+    border-radius: 0px 0px 20px 20px;
+  }
+  #panelID .PanelSection #homeButtonSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #venueHeading {
   color: purple;
 }
@@ -147,21 +257,21 @@ header #navTickets #buyTickets {
 #featuredCars h5 {
   font-weight: 800;
 }
-#featuredCars .featuredThumbs {
-  filter: grayscale(100%);
-  transition: 0.2s ease-in-out;
-}
-#featuredCars .featuredThumbs:hover {
-  filter: grayscale(0%);
-}
 #featuredCars .img-thumbnail {
   border: none;
   border-radius: 10px;
   margin-bottom: 10px;
 }
 #featuredCars .featuredCarsPara {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.2s ease-in-out;
   font-size: 0.8em;
   font-weight: 400;
+}
+#featuredCars .featuredCarsPara:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .callToAction {
@@ -202,13 +312,17 @@ header #navTickets #buyTickets {
   color: red;
   transform: translateX(5px);
 }
-.callToAction #upcomingEventsCarousel img {
+.callToAction #upcomingEventsCarousel {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.2s ease-in-out;
-  border-radius: 4px;
 }
-.callToAction #upcomingEventsCarousel img:hover {
+.callToAction #upcomingEventsCarousel:hover {
+  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+.callToAction #upcomingEventsCarousel img {
+  border-radius: 4px;
 }
 .callToAction #upcomingEventsCarousel #cCaption1 {
   position: absolute;
@@ -484,6 +598,7 @@ footer a:hover {
     padding-top: 15px;
   }
   #featuredCars .featuredThumbs {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #featuredCars .featuredCarsPara {
@@ -518,6 +633,7 @@ footer a:hover {
     color: white;
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner #cImage {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner p {
@@ -551,6 +667,7 @@ footer a:hover {
     padding-bottom: 0px;
   }
   #featuredCars .featuredThumbs {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #featuredCars .featuredCarsPara {
@@ -575,6 +692,7 @@ footer a:hover {
     color: white;
   }
   #carouselExampleCaptions #cImage {
+    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #carouselExampleCaptions p {
