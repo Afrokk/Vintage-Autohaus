@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Yellowtail&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
@@ -21,7 +21,7 @@
 <body>
     <!-- NavBar -->
     <header>
-        <nav id="navGlobal" class="navbar navbar-dark navbar-expand-md fixed-top">
+        <nav class="navGlobal navbar navbar-dark navbar-expand-md fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="">Vintage Autohaus</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -290,7 +290,7 @@
     <script>
         $(function () {
             $(document).scroll(function () {
-                var $nav = $("#navGlobal");
+                var $nav = $(".navGlobal");
                 $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
             });
         });

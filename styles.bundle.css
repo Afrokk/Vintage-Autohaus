@@ -1,5 +1,72 @@
-#ticketsHeading {
-  color: yellow;
+header #navTickets a {
+  color: black;
+}
+header #navTickets #buyTickets {
+  display: none;
+}
+
+#navTickets.scrolled {
+  background: black;
+  transition: 0.5s ease-in-out;
+}
+#navTickets.scrolled a {
+  color: white;
+}
+
+#ticketsHText {
+  padding-top: 5rem;
+}
+#ticketsHText #ticketsHHero {
+  font-family: "Yellowtail", cursive;
+  font-size: 3.5em;
+}
+#ticketsHText #ticketsHPara {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+}
+#ticketsHText #ticketsHAlert {
+  margin-right: 20vh;
+  margin-left: 20vh;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+}
+
+.PanelSectionContainer {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  padding-right: 20vh;
+  padding-left: 20vh;
+  justify-content: center;
+  align-text: center;
+}
+.PanelSectionContainer .PanelSection {
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 35px 5px 50px 35px;
+}
+.PanelSectionContainer .PanelSection div {
+  margin: 20px;
+  border-radius: 20px;
+  filter: grayscale(100%);
+  transition: 0.3s ease-in-out;
+}
+.PanelSectionContainer .PanelSection div:hover {
+  background-color: lightblue;
+  filter: grayscale(0%);
+}
+.PanelSectionContainer .PanelSection h2 {
+  font-size: 2em;
+}
+.PanelSectionContainer .PanelSection h4 {
+  font-size: 1.3em;
+}
+.PanelSectionContainer .PanelSection ul {
+  list-style: none;
+  padding: 0px;
 }
 
 #venueHeading {
@@ -18,30 +85,30 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-#navGlobal.scrolled {
+.navGlobal.scrolled {
   background: black;
   transition: 0.5s ease-in-out;
 }
 
-#navGlobal {
+.navGlobal {
   background-color: transparent;
 }
-#navGlobal .navbar-brand {
+.navGlobal .navbar-brand {
   font-family: "Yellowtail", cursive;
   font-size: 1.5em;
   padding: 0px;
 }
-#navGlobal .nav-item {
+.navGlobal .nav-item {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
-#navGlobal #buyTickets {
+.navGlobal #buyTickets {
   color: white;
   font-weight: bold;
   background-color: black;
   border: 2px solid white;
 }
-#navGlobal #buyTickets:hover {
+.navGlobal #buyTickets:hover {
   color: white;
   background-color: red;
   border-radius: 7px;
@@ -81,12 +148,10 @@
   font-weight: 800;
 }
 #featuredCars .featuredThumbs {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.2s ease-in-out;
 }
 #featuredCars .featuredThumbs:hover {
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 #featuredCars .img-thumbnail {
@@ -138,13 +203,11 @@
   transform: translateX(5px);
 }
 .callToAction #upcomingEventsCarousel img {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.2s ease-in-out;
   border-radius: 4px;
 }
 .callToAction #upcomingEventsCarousel img:hover {
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .callToAction #upcomingEventsCarousel #cCaption1 {
@@ -421,7 +484,6 @@ footer a:hover {
     padding-top: 15px;
   }
   #featuredCars .featuredThumbs {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #featuredCars .featuredCarsPara {
@@ -456,7 +518,6 @@ footer a:hover {
     color: white;
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner #cImage {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner p {
@@ -490,7 +551,6 @@ footer a:hover {
     padding-bottom: 0px;
   }
   #featuredCars .featuredThumbs {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #featuredCars .featuredCarsPara {
@@ -515,7 +575,6 @@ footer a:hover {
     color: white;
   }
   #carouselExampleCaptions #cImage {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #carouselExampleCaptions p {
