@@ -1,2 +1,72 @@
-#ticketsHeading
-    color: yellow
+$logoFont: 'Yellowtail', cursive
+$mainFont: 'Montserrat', sans-serif 
+
+// Nav Styles for Tickets Page
+header #navTickets
+    a
+        color: black
+
+    #buyTickets
+        display: none
+
+#navTickets.scrolled
+    background: black
+    transition: 0.5s ease-in-out
+    a
+        color: white
+
+#ticketsHText
+    padding-top: 5rem
+
+    #ticketsHHero
+        font-family: $logoFont
+        font-size: 3.5em
+    
+    #ticketsHPara
+        font-family: $mainFont
+        font-weight: 400
+        font-size: 1em
+    
+    #ticketsHAlert
+        margin-right: 20vh
+        margin-left: 20vh
+        border-radius: 20px
+        background-color: black
+        color: white
+
+.PanelSectionContainer
+    margin-top: 2rem
+    margin-bottom: 1rem
+    background-color: white
+    padding-right: 20vh
+    padding-left: 20vh
+    justify-content: center
+    align-text: center
+
+    .PanelSection
+        
+        border-radius: 20px
+        background-color: black
+        color: white
+        padding: 35px 5px 50px 35px
+
+        div
+            margin: 20px
+            border-radius: 20px
+            -webkit-filter: grayscale(100%) //for Safari
+            filter: grayscale(100%)
+            transition: 0.3s ease-in-out
+            &:hover
+                background-color: lightblue
+                -webkit-filter: grayscale(0%) //for Safari
+                filter: grayscale(0%)
+
+        h2
+            font-size: 2em
+
+        h4
+            font-size: 1.3em
+        
+        ul
+            list-style: none
+            padding: 0px
