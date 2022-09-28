@@ -26,18 +26,18 @@
                 <a class="navbar-brand" href="">Vintage Autohaus</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span id="navTicketsIcon" class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navCol" id="navbarNav">
                     <ul class="navbar-nav nav-right">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="">Home</a>
+                            <a class="nav-link" aria-current="page" href="..\index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages\venue.html" target=”_blank”>Venue</a>
+                            <a class="nav-link" href="venue.html" target=”_blank”>Venue</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="pages\about.html" target=”_blank”>About</a>
+                            <a class="nav-link" href="about.html" target=”_blank”>About</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav nav-right ms-auto">
@@ -56,6 +56,7 @@
         <section class="col-12 text-center">
             <p id="ticketsHHero" class="display-4">General Admission Tickets - Open Today</p>
             <p id="ticketsHPara" class="display-6">Discounted Veteran tickets available on-site with identification.</p>
+            <p id="ticketsHPara" class="display-6"> OPEN MONDAY - SUNDAY 10AM - 5PM </p>
             <div id="ticketsHAlert" class="alert alert-warning" role="alert">
                 NOTICE - The Museum with be closed on the following days: October 1, October 21, and November 3.
             </div>
@@ -63,57 +64,53 @@
     </section>
 
     <!-- Panel -->
-    <section class="PanelSectionParent container-fluid">
-        <section class="PanelSectionContainer container-xl">
-            <section class="PanelSection row text-center">
-                <div class="col Tier1">
-                    <img class="img-fluid"
-                        src="../images/ticket-1.png"
-                        alt="Tier 1.">
-                    <h2>Visitor</h2>
-                    <h4>Age 12-62</h4>
-                    <ul>
-                        <li>General Access</li>
-                        <li>Floor 1-2 only</li>
-                        <li>eTicket Delivery</li>
-                    </ul>
-                    <h3>$10</h3>
-                    <button>Buy Now</button>
-                </div>
+    <section id="panelID" class="PanelSectionContainer container-xl">
+        <section class="row PanelSection text-center">
+            <div class="col-md-4 col-12 p-4">
+                <img class="img-fluid" src="../images/ticket-1.png" alt="Tier 1.">
+                <h2>Visitor</h2>
+                <h4>Age 12-62</h4>
+                <ul>
+                    <li>General Access</li>
+                    <li>Floor 1-2 only</li>
+                    <li>eTicket Delivery</li>
+                </ul>
+                <h3>$10</h3>
+                <button>Buy Now</button>
+            </div>
 
-                <div class="col Tier2">
-                    <img class="img-fluid"
-                        src="../images/ticket-2.png"
-                        alt="col-4 Tier 2.">
-                    <h2>Visitor+</h2>
-                    <h4>Age 12-62</h4>
-                    <ul>
-                        <li>Extended Access</li>
-                        <li>Guided Tour</li>
-                        <li>eTicket Delivery</li>
-                    </ul>
-                    <h3>$25</h3>
-                    <button>Buy Now</button>
-                </div>
+            <div class="col-md-4 col-12 p-4">
+                <img class="img-fluid" src="../images/ticket-2.png" alt="col-4 Tier 2.">
+                <h2>Visitor+</h2>
+                <h4>Age 12-62</h4>
+                <ul>
+                    <li>Extended Access</li>
+                    <li>Guided Tour</li>
+                    <li>eTicket Delivery</li>
+                </ul>
+                <h3>$25</h3>
+                <button>Buy Now</button>
+            </div>
 
-                <div class="col Tier3">
-                    <img class="img-fluid" src="../images/ticket-3.png" alt="Tier 3.">
-                    <h2>VintagePass&#8482;</h2>
-                    <h4>Age 12-62</h4>
-                    <ul>
-                        <li>Complete Access</li>
-                        <li>The Vault</li>
-                        <li>Patio Dinner Included</li>
-                    </ul>
-                    <h3>$250</h3>
-                    <button>Buy Now</button>
-                </div>
-            </section>
+            <div class="col-md-4 col-12 p-4">
+                <img class="img-fluid" src="../images/ticket-3.png" alt="Tier 3.">
+                <h2>VintagePass&#8482;</h2>
+                <h4>Age 12-62</h4>
+                <ul>
+                    <li>Complete Access</li>
+                    <li>The Vault</li>
+                    <li>Patio Dinner Included</li>
+                </ul>
+                <h3>$250</h3>
+                <button>Buy Now</button>
+            </div>
         </section>
     </section>
 
-    <section class="container-fluid text-center">
-        <p><a class="buttonsCTA btn btn-primary" href="">Plan Event <span id="arrow">&#8594</span></a></p>
+    <section class="container-fluid text-left">
+        <div id="homeButtonSection" class="container-xl">
+            <p><a id="homeButton" class="btn btn-primary" href="../index.html"><span>&larr;</span> Back to Home</a></p>
+        </div>
     </section>
 
     <!-- Footer Section -->
