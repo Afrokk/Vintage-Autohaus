@@ -597,11 +597,9 @@ footer a:hover {
     padding: 100px;
     padding-top: 15px;
   }
-  #featuredCars .featuredThumbs {
+  #featuredCars .featuredCarsPara {
     -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
-  }
-  #featuredCars .featuredCarsPara {
     padding-bottom: 15px;
   }
   #heroImage {
@@ -626,15 +624,15 @@ footer a:hover {
   #upcomingEvents {
     font-size: 2.5em;
   }
+  #upcomingEventsSection #upcomingEventsCarousel {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner {
     font-size: 0.4em;
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner .caoursel-item {
     color: white;
-  }
-  #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner #cImage {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner p {
     display: none;
@@ -685,19 +683,17 @@ footer a:hover {
     align-items: center;
     font-family: "Yellowtail", cursive;
   }
+  #carouselExampleCaptions {
+    font-size: 0.7em;
+  }
   #carouselExampleCaptions button {
     display: none;
   }
   #carouselExampleCaptions .caoursel-item {
     color: white;
   }
-  #carouselExampleCaptions #cImage {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-  }
   #carouselExampleCaptions p {
     display: none;
-    font-size: 0.7em;
   }
   #carouselExampleCaptions a {
     font-size: 1.9em !important;

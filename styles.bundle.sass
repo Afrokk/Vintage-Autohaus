@@ -349,10 +349,8 @@ footer
         padding: 100px
         padding-top: 15px
 
-        .featuredThumbs
-            @include UndoGreyscale
-
         .featuredCarsPara
+            @include UndoGreyscale
             padding-bottom: 15px
 
     #heroImage
@@ -376,15 +374,15 @@ footer
 
     #upcomingEvents
         font-size: 2.5em
+    
+    #upcomingEventsSection #upcomingEventsCarousel
+        @include UndoGreyscale
 
     #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner
         font-size: 0.4em
 
         .caoursel-item
             color: white
-
-        #cImage
-            @include UndoGreyscale
 
         p
             display: none
@@ -437,19 +435,16 @@ footer
             font-family: $logoFont
 
     #carouselExampleCaptions
+        font-size: 0.7em
+
         button
             display: none
 
         .caoursel-item
             color: white
 
-        #cImage
-            @include UndoGreyscale
-
         p
             display: none
-
-            font-size: 0.7em
 
         a
             font-size: 1.9em !important
