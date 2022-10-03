@@ -183,8 +183,101 @@ header #navTickets #buyTickets {
   color: purple;
 }
 
-#aboutHeading {
-  color: brown;
+header #navAbout {
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+header #navAbout li:nth-child(3) a {
+  font-weight: bold;
+}
+header #navAbout a {
+  color: black;
+  font-weight: 400;
+}
+header #navAbout #buyTickets {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border: 2px solid white;
+}
+header #navAbout #buyTickets:hover {
+  color: white;
+  background-color: red;
+  border-radius: 7px;
+}
+
+#navAbout.scrolled {
+  background: black;
+  transition: 0.5s ease-in-out;
+}
+#navAbout.scrolled .navbar-brand {
+  color: white;
+}
+#navAbout.scrolled a {
+  color: #959595;
+}
+#navAbout.scrolled li:nth-child(3) a {
+  font-weight: 400;
+  color: white;
+}
+
+#aboutHText {
+  padding-top: 5rem;
+}
+#aboutHText #aboutHHero {
+  font-family: "Yellowtail", cursive;
+  font-size: 3.5em;
+}
+#aboutHText #aboutHPara {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1em;
+}
+#aboutHText #aboutHAlert {
+  border-radius: 15px;
+  background-color: black;
+  color: white;
+}
+
+#aboutHeroImage {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-1.jpg");
+  filter: grayscale(1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+#aboutHeroImage:hover {
+  filter: grayscale(0);
+}
+#aboutHeroImage .heroText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  height: 55vh;
+  justify-content: center;
+  align-items: center;
+  font-family: "Yellowtail", cursive;
+}
+#aboutHeroImage .heroPara {
+  color: white;
+}
+
+.aboutHeading {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5em;
+}
+
+.aboutDesc {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 1em;
+  color: black;
+  font-weight: 400;
+  padding-top: 200px;
 }
 
 * {
