@@ -1,2 +1,94 @@
-#aboutHeading
-    color: brown
+$logoFont: 'Yellowtail', cursive
+$mainFont: 'Montserrat', sans-serif 
+
+// Nav Styles for About Page
+header #navAbout
+    background: transparent
+    border-bottom: 1px solid black
+
+    li:nth-child(3)
+        a
+            font-weight: bold
+    
+    a
+        color: black
+        font-weight: 400
+
+    #buyTickets
+        color: white
+        font-weight: bold
+        background-color: black
+        border: 2px solid white
+        &:hover
+            color: white
+            background-color: red
+            border-radius: 7px
+
+#navAbout.scrolled
+    background: black
+    transition: 0.5s ease-in-out
+
+    .navbar-brand
+        color: white
+
+    a
+        color: #959595
+
+    li:nth-child(3)
+        a
+            font-weight: 400
+            color: white
+
+#aboutHText
+    padding-top: 5rem
+
+    #aboutHHero
+        font-family: $logoFont
+        font-size: 3.5em
+    
+    #aboutHPara
+        font-family: $mainFont
+        color: black
+        text-align: left
+        font-weight: 400
+        font-size: 1em
+    
+    #aboutHAlert
+        border-radius: 15px
+        background-color: black
+        color: white
+
+#aboutHeroImage
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/about-1.jpg')
+    filter: grayscale(1)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    width: 100%
+    &:hover
+        filter: grayscale(0)
+
+    .heroText
+        font-family: $mainFont
+        font-size: 5em
+        color: white
+        display: flex
+        height: 55vh
+        justify-content: center
+        align-items: center
+        font-family: $logoFont
+
+    .heroPara
+        color: white
+
+.aboutHeading
+    font-family: $logoFont
+    font-size: 2.5em
+
+.aboutDesc
+    font-family: $mainFont
+    text-align: left
+    font-size: 1em
+    color: black
+    font-weight: 400
+    padding-top: 200px
