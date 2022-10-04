@@ -7,7 +7,7 @@
   <h3 align="center">Vintage Autohaus</h3>
 
   <p align="center">
-    A website for a Vintage Car Museum.
+    A website design for a Vintage Car Museum.
     <br />
     <a href="https://afrokk.github.io/Vintage-Autohaus/" target="_blank"><strong>Check it out Live! »</strong></a>
     <br />
