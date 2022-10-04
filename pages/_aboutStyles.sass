@@ -1,6 +1,28 @@
 $logoFont: 'Yellowtail', cursive
 $mainFont: 'Montserrat', sans-serif 
 
+//mixins
+@mixin heroBannerStyles($imagePath, $textViewportHeight, $textColor)
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($imagePath)
+        filter: grayscale(1)
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        width: 100%
+        transition: all 0.3s ease-in-out
+    
+        &:hover
+            filter: grayscale(0)
+
+        .heroText
+            font-family: $logoFont
+            font-size: 5em
+            color: $textColor
+            display: flex
+            height: $textViewportHeight
+            justify-content: center
+            align-items: center
+
 // Nav Styles for About Page
 header #navAbout
     background: transparent
@@ -44,7 +66,7 @@ header #navAbout
 
     #aboutHHero
         font-family: $logoFont
-        font-size: 3.5em
+        font-size: 4em
     
     #aboutHPara
         font-family: $mainFont
@@ -59,31 +81,10 @@ header #navAbout
         color: white
 
 #aboutHeroImage
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/about-1.jpg')
-    filter: grayscale(1)
-    background-size: cover
-    background-position: center
-    background-repeat: no-repeat
-    width: 100%
-    &:hover
-        filter: grayscale(0)
-
-    .heroText
-        font-family: $mainFont
-        font-size: 5em
-        color: white
-        display: flex
-        height: 55vh
-        justify-content: center
-        align-items: center
-        font-family: $logoFont
+    @include heroBannerStyles('images/about-1.jpg', 45vh, white)
 
     .heroPara
         color: white
-
-.aboutHeading
-    font-family: $logoFont
-    font-size: 2.5em
 
 .aboutDesc
     font-family: $mainFont
@@ -91,4 +92,56 @@ header #navAbout
     font-size: 1em
     color: black
     font-weight: 400
-    padding-top: 200px
+    margin: 20px 0px
+
+#aboutHeroImage2
+    @include heroBannerStyles('images/about-2.jpg', 45vh, white)
+
+    #heroText2
+        font-family: $mainFont
+        text-align: left
+        font-size: 1em
+        color: white
+        font-weight: 400
+        flex-direction: column
+        span
+            font-family: $logoFont
+            font-size: 5em
+            justify-content: center
+            align-items: center
+
+.aboutDesc2
+    color: white
+
+.accessibilitySection
+    h3, h4
+        font-family: $logoFont
+        font-size: 2.5em
+        color: black
+        text-align: center
+        margin: 20px 0px
+    
+    h4
+        text-align: left
+        font-size: 2em
+    
+    p
+        color: black
+        font-size: 1em
+    
+    #accButton
+        color: black
+        font-size: 1.3em
+        font-weight: bold
+        background-color: transparent
+        border: none
+        padding-top: 0px
+        padding-left: 0px
+        padding-bottom: 10px
+        letter-spacing: 0.1em
+        transition: .2s ease-in-out
+        &:hover
+            background-color: transparent
+            color: red
+            transform: translateX(5px)
+
