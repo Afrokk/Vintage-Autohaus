@@ -51,7 +51,7 @@ header #navTickets #buyTickets {
   background-color: black;
   color: white;
 }
-.PanelSectionContainer .PanelSection a {
+.PanelSectionContainer .PanelSection .buyButton {
   color: white;
   font-weight: bold;
   font-size: 1.5em;
@@ -62,7 +62,7 @@ header #navTickets #buyTickets {
   transition: 0.2s ease-in-out;
   text-decoration: none;
 }
-.PanelSectionContainer .PanelSection a:hover {
+.PanelSectionContainer .PanelSection .buyButton:hover {
   color: black;
   background-color: white;
   border-radius: 7px;
