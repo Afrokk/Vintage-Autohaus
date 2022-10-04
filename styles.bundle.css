@@ -51,19 +51,18 @@ header #navTickets #buyTickets {
   background-color: black;
   color: white;
 }
-.PanelSectionContainer .PanelSection button {
+.PanelSectionContainer .PanelSection a {
   color: white;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.5em;
   background-color: transparent;
   padding: 15px;
-  margin-top: 10px;
-  margin-bottom: 0px;
   border: 1.5px solid white;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
-.PanelSectionContainer .PanelSection button:hover {
+.PanelSectionContainer .PanelSection a:hover {
   color: black;
   background-color: white;
   border-radius: 7px;
@@ -110,6 +109,7 @@ header #navTickets #buyTickets {
   font-weight: 800;
   font-size: 2em;
   letter-spacing: 0.1em;
+  margin-bottom: 40px;
 }
 .PanelSectionContainer .PanelSection h4 {
   font-weight: 300;
@@ -226,7 +226,7 @@ header #navAbout #buyTickets:hover {
 }
 #aboutHText #aboutHHero {
   font-family: "Yellowtail", cursive;
-  font-size: 3.5em;
+  font-size: 4em;
 }
 #aboutHText #aboutHPara {
   font-family: "Montserrat", sans-serif;
@@ -248,27 +248,22 @@ header #navAbout #buyTickets:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 #aboutHeroImage:hover {
   filter: grayscale(0);
 }
 #aboutHeroImage .heroText {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Yellowtail", cursive;
   font-size: 5em;
   color: white;
   display: flex;
-  height: 55vh;
+  height: 45vh;
   justify-content: center;
   align-items: center;
-  font-family: "Yellowtail", cursive;
 }
 #aboutHeroImage .heroPara {
   color: white;
-}
-
-.aboutHeading {
-  font-family: "Yellowtail", cursive;
-  font-size: 2.5em;
 }
 
 .aboutDesc {
@@ -277,7 +272,80 @@ header #navAbout #buyTickets:hover {
   font-size: 1em;
   color: black;
   font-weight: 400;
-  padding-top: 200px;
+  margin: 20px 0px;
+}
+
+#aboutHeroImage2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-2.jpg");
+  filter: grayscale(1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+#aboutHeroImage2:hover {
+  filter: grayscale(0);
+}
+#aboutHeroImage2 .heroText {
+  font-family: "Yellowtail", cursive;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  height: 45vh;
+  justify-content: center;
+  align-items: center;
+}
+#aboutHeroImage2 #heroText2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  font-weight: 400;
+  flex-direction: column;
+}
+#aboutHeroImage2 #heroText2 span {
+  font-family: "Yellowtail", cursive;
+  font-size: 5em;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutDesc2 {
+  color: white;
+}
+
+.accessibilitySection h3, .accessibilitySection h4 {
+  font-family: "Yellowtail", cursive;
+  font-size: 2.5em;
+  color: black;
+  text-align: center;
+  margin: 20px 0px;
+}
+.accessibilitySection h4 {
+  text-align: left;
+  font-size: 2em;
+}
+.accessibilitySection p {
+  color: black;
+  font-size: 1em;
+}
+.accessibilitySection #accButton {
+  color: black;
+  font-size: 1.3em;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-bottom: 10px;
+  letter-spacing: 0.1em;
+  transition: 0.2s ease-in-out;
+}
+.accessibilitySection #accButton:hover {
+  background-color: transparent;
+  color: red;
+  transform: translateX(5px);
 }
 
 * {
