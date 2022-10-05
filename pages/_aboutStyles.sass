@@ -2,7 +2,7 @@ $logoFont: 'Yellowtail', cursive
 $mainFont: 'Montserrat', sans-serif 
 
 //mixins
-@mixin heroBannerStyles($imagePath, $textViewportHeight, $textColor)
+@mixin heroBannerStyles($imagePath, $textViewportHeight)
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url($imagePath)
         filter: grayscale(1)
         background-size: cover
@@ -13,11 +13,12 @@ $mainFont: 'Montserrat', sans-serif
     
         &:hover
             filter: grayscale(0)
+            webkit-filter: grayscale(0) //for Safari
 
         .heroText
             font-family: $logoFont
             font-size: 5em
-            color: $textColor
+            color: white
             display: flex
             height: $textViewportHeight
             justify-content: center
@@ -50,6 +51,9 @@ header #navAbout
     background: black
     transition: 0.5s ease-in-out
 
+    #navTicketsIcon
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+
     .navbar-brand
         color: white
 
@@ -81,7 +85,7 @@ header #navAbout
         color: white
 
 #aboutHeroImage
-    @include heroBannerStyles('images/about-1.jpg', 45vh, white)
+    @include heroBannerStyles('images/about-1.jpg', 45vh)
 
     .heroPara
         color: white
@@ -95,7 +99,7 @@ header #navAbout
     margin: 20px 0px
 
 #aboutHeroImage2
-    @include heroBannerStyles('images/about-2.jpg', 45vh, white)
+    @include heroBannerStyles('images/about-2.jpg', 45vh)
 
     #heroText2
         font-family: $mainFont
@@ -110,13 +114,10 @@ header #navAbout
             justify-content: center
             align-items: center
 
-.aboutDesc2
-    color: white
-
 .accessibilitySection
     h3, h4
         font-family: $logoFont
-        font-size: 2.5em
+        font-size: 3em
         color: black
         text-align: center
         margin: 20px 0px
@@ -145,3 +146,176 @@ header #navAbout
             color: red
             transform: translateX(5px)
 
+#aboutHeroImage3
+    @include heroBannerStyles('images/about-3.jpg', 75vh)
+
+    #heroText3
+        font-family: $mainFont
+        margin: 0px
+        text-align: left
+        font-size: 1em
+        color: white
+        font-weight: 400
+        flex-direction: column
+        span
+            font-family: $logoFont
+            font-size: 5em
+            justify-content: center
+            align-items: center
+    
+    #visitButton
+        link-style: none
+        text-decoration: none
+        font-family: $mainFont
+        color: white
+        font-weight: bold
+        font-size: 1.5em
+        background-color: transparent
+        padding: 15px
+        margin-top: 30px
+        border: 1.5px solid white
+        border-radius: 10px
+        transition: 0.2s ease-in-out
+        text-decoration: none
+        &:hover
+            color: black
+            background-color: white
+            border-radius: 7px
+        span
+            font-weight: 300
+            font-size: 1.1em
+
+#sponsorSection
+    max-width: 65vw
+    min-width: 45vw
+
+    h3
+        margin: 20px 0px
+        font-family: $logoFont
+        font-family: $logoFont
+        font-size: 3em
+        color: black
+        text-align: center
+    
+    div
+        align-items: center
+        justify-content: center
+    
+    .sponsorImages
+        padding: 0px 50px 0px 0px
+        transition: 0.2s
+        &:hover
+            transform: scale(1.1)
+
+    .sponsorRow
+        padding-bottom: 20px
+
+//Media Query for tablets
+@media (max-width: 768px)
+
+    #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3
+        filter: grayscale(0)
+        webkit-filter: grayscale(0) //for Safari
+        font-size: 0.9em
+
+    #aboutHText
+        #aboutHHero
+            font-size: 3em
+        
+        #aboutHPara
+            font-size: 1em
+
+    #heroText
+        font-size: 2em
+    
+    #sponsorSection
+        h3
+            font-size: 2em
+        .sponsorImages
+            transform: scale(1.1)
+            padding-right: 15px
+            padding-top: 15px
+        
+        .sponsorImages:nth-child(even)
+            padding-right: 0px
+            padding-left: 15px
+
+//Media Query for mobile
+@media (max-width: 500px)
+    
+    #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3
+        font-size: 1em
+
+    #aboutHText
+        #aboutHHero
+            font-size: 3em
+        
+        #aboutHPara
+            font-size: 1em
+
+    #heroText
+        font-size: 1.5em
+    
+    #sponsorSection
+        h3
+            font-size: 1.5em
+        .sponsorImages
+            transform: scale(1.1)
+            padding-right: 15px
+            padding-top: 15px
+        
+        .sponsorImages:nth-child(even)
+            padding-right: 0px
+            padding-left: 15px
+    
+    #aboutHeroImage
+        font-size: 0.6em
+
+    #aboutHeroImage2
+        font-size: 0.9em
+
+        #heroTextMain2
+            padding-top: 20px
+            padding-bottom: 20px
+            span
+                font-size: 2em
+                justify-content: center
+                align-items: center
+    
+    .accessibilitySection
+        #accButton
+            font-size: 1em
+            display: block
+            padding: 10px
+            border: 1px solid black
+            margin: 10px
+
+            span
+                display: none
+
+            &:hover
+                background-color: black
+                color: white
+                transform: translateX(0px)
+
+    #aboutHeroImage3
+        font-size: 1em
+
+        #heroTextMain3
+            span
+                font-size: 3em
+
+            #visitButton
+                font-size: 1em
+                span
+                    font-size: 1.3em
+    
+    #sponsorSection
+        h3
+            font-size: 2.5em
+        
+        .sponsorImages
+            padding: 20px 30px 0px 0px
+                
+        .sponsorRow
+            padding-bottom: 20px
