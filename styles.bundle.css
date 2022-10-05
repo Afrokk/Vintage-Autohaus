@@ -180,7 +180,7 @@ header #navTickets #buyTickets {
   }
 }
 #venueHeading {
-  color: purple;
+  color: black;
 }
 
 header #navAbout {
@@ -209,6 +209,9 @@ header #navAbout #buyTickets:hover {
 #navAbout.scrolled {
   background: black;
   transition: 0.5s ease-in-out;
+}
+#navAbout.scrolled #navTicketsIcon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 #navAbout.scrolled .navbar-brand {
   color: white;
@@ -252,6 +255,7 @@ header #navAbout #buyTickets:hover {
 }
 #aboutHeroImage:hover {
   filter: grayscale(0);
+  webkit-filter: grayscale(0);
 }
 #aboutHeroImage .heroText {
   font-family: "Yellowtail", cursive;
@@ -286,6 +290,7 @@ header #navAbout #buyTickets:hover {
 }
 #aboutHeroImage2:hover {
   filter: grayscale(0);
+  webkit-filter: grayscale(0);
 }
 #aboutHeroImage2 .heroText {
   font-family: "Yellowtail", cursive;
@@ -311,13 +316,9 @@ header #navAbout #buyTickets:hover {
   align-items: center;
 }
 
-.aboutDesc2 {
-  color: white;
-}
-
 .accessibilitySection h3, .accessibilitySection h4 {
   font-family: "Yellowtail", cursive;
-  font-size: 2.5em;
+  font-size: 3em;
   color: black;
   text-align: center;
   margin: 20px 0px;
@@ -348,6 +349,200 @@ header #navAbout #buyTickets:hover {
   transform: translateX(5px);
 }
 
+#aboutHeroImage3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/about-3.jpg");
+  filter: grayscale(1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+#aboutHeroImage3:hover {
+  filter: grayscale(0);
+  webkit-filter: grayscale(0);
+}
+#aboutHeroImage3 .heroText {
+  font-family: "Yellowtail", cursive;
+  font-size: 5em;
+  color: white;
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+#aboutHeroImage3 #heroText3 {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  text-align: left;
+  font-size: 1em;
+  color: white;
+  font-weight: 400;
+  flex-direction: column;
+}
+#aboutHeroImage3 #heroText3 span {
+  font-family: "Yellowtail", cursive;
+  font-size: 5em;
+  justify-content: center;
+  align-items: center;
+}
+#aboutHeroImage3 #visitButton {
+  link-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5em;
+  background-color: transparent;
+  padding: 15px;
+  margin-top: 30px;
+  border: 1.5px solid white;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+#aboutHeroImage3 #visitButton:hover {
+  color: black;
+  background-color: white;
+  border-radius: 7px;
+}
+#aboutHeroImage3 #visitButton span {
+  font-weight: 300;
+  font-size: 1.1em;
+}
+
+#sponsorSection {
+  max-width: 65vw;
+  min-width: 45vw;
+}
+#sponsorSection h3 {
+  margin: 20px 0px;
+  font-family: "Yellowtail", cursive;
+  font-family: "Yellowtail", cursive;
+  font-size: 3em;
+  color: black;
+  text-align: center;
+}
+#sponsorSection div {
+  align-items: center;
+  justify-content: center;
+}
+#sponsorSection .sponsorImages {
+  padding: 0px 50px 0px 0px;
+  transition: 0.2s;
+}
+#sponsorSection .sponsorImages:hover {
+  transform: scale(1.1);
+}
+#sponsorSection .sponsorRow {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3 {
+    filter: grayscale(0);
+    webkit-filter: grayscale(0);
+    font-size: 0.9em;
+  }
+  #aboutHText #aboutHHero {
+    font-size: 3em;
+  }
+  #aboutHText #aboutHPara {
+    font-size: 1em;
+  }
+  #heroText {
+    font-size: 2em;
+  }
+  #sponsorSection h3 {
+    font-size: 2em;
+  }
+  #sponsorSection .sponsorImages {
+    transform: scale(1.1);
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  #sponsorSection .sponsorImages:nth-child(even) {
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+}
+@media (max-width: 500px) {
+  #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3 {
+    font-size: 1em;
+  }
+  #aboutHText #aboutHHero {
+    font-size: 3em;
+  }
+  #aboutHText #aboutHPara {
+    font-size: 1em;
+  }
+  #heroText {
+    font-size: 1.5em;
+  }
+  #sponsorSection h3 {
+    font-size: 1.5em;
+  }
+  #sponsorSection .sponsorImages {
+    transform: scale(1.1);
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  #sponsorSection .sponsorImages:nth-child(even) {
+    padding-right: 0px;
+    padding-left: 15px;
+  }
+  #aboutHeroImage {
+    font-size: 0.6em;
+  }
+  #aboutHeroImage2 {
+    font-size: 0.9em;
+  }
+  #aboutHeroImage2 #heroTextMain2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #aboutHeroImage2 #heroTextMain2 span {
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+  }
+  .accessibilitySection #accButton {
+    font-size: 1em;
+    display: block;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+  }
+  .accessibilitySection #accButton span {
+    display: none;
+  }
+  .accessibilitySection #accButton:hover {
+    background-color: black;
+    color: white;
+    transform: translateX(0px);
+  }
+  #aboutHeroImage3 {
+    font-size: 1em;
+  }
+  #aboutHeroImage3 #heroTextMain3 span {
+    font-size: 3em;
+  }
+  #aboutHeroImage3 #heroTextMain3 #visitButton {
+    font-size: 1em;
+  }
+  #aboutHeroImage3 #heroTextMain3 #visitButton span {
+    font-size: 1.3em;
+  }
+  #sponsorSection h3 {
+    font-size: 2.5em;
+  }
+  #sponsorSection .sponsorImages {
+    padding: 20px 30px 0px 0px;
+  }
+  #sponsorSection .sponsorRow {
+    padding-bottom: 20px;
+  }
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -898,13 +1093,13 @@ footer a:hover {
   #footerMainNav #footerNav #footerNav ul li a {
     font-size: 0.8em;
   }
-  #footerMainNav #footerNav #footerLogo h2 {
+  #footerLogo #footerLogoText {
     font-size: 3em;
   }
-  #footerMainNav #footerNav #address {
+  #footerLogo #address {
     font-size: 0.8em;
   }
-  #footerMainNav #footerNav #contact {
+  #footerLogo #contact {
     font-size: 0.8em;
   }
 }/*# sourceMappingURL=styles.bundle.css.map */
