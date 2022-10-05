@@ -56,9 +56,9 @@ Here's a look at the design of the website on different devices.
 Some of the things I'd like to do with this project, as I work on it:
 
 - [x] Complete Home Page.
-- [ ] Complete About Page. (In Progress)
+- [x] Complete About Page. 
 - [x] Complete Tickets Page.
-- [ ] Complete Venue Page.
+- [ ] Complete Venue Page. (In Progress)
 - [ ] Optimize.
 
 
