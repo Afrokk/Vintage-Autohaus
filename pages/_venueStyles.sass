@@ -47,6 +47,9 @@ header #navVenue
             color: white
             background-color: red
             border-radius: 7px
+    
+    #navTicketsIcon
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
 
 #navVenue.scrolled
     background: black
@@ -88,30 +91,45 @@ header #navVenue
         font-size: 4em
         padding: 15px
 
-#venueHero2 
-    filter: grayscale(1)
-    webkit-filter: grayscale(1) //for Safari
-    transition: 0.3s ease-in-out
-    &:hover
-        filter: grayscale(0)
-        webkit-filter: grayscale(0) //for Safari
-
 #venueHeroImage2
-    display: flex
-    flex-direction: column
-    align-items: center
-    justify-content: center
-    
-    h3
-        font-family: $logoFont
-        font-size: 3.5em
-        text-align: center
-        padding: 15px
-        color: white
-        margin-bottom: -90px
-        position: relative
-        top: 40%
+    @include heroBannerStyles('images/venue-2.jpg', 75vh)
 
-    img
-        height: 800px
+    #heroText2
+        font-family: $mainFont
+        text-align: left
+        font-size: 1em
+        color: white
+        font-weight: 400
+        flex-direction: column
+        justify-content: center
+        margin-bottom: 0px
+        span
+            font-family: $logoFont
+            font-size: 5em
+    
+    ul
+        list-style: none
+        line-height: 2em
+        padding: 0px
+    
+    li a 
+        padding: 10px
+        margin-top: 20px
+        font-family: $mainFont
+        font-weight: regular
+        background: transparent
+        border: 1px solid white
+        transition: 0.2s ease-in-out
+        &:hover
+            background: #171717
+    
+    p
+        margin: 0px
+    
+    #penthouseHeading
+        line-height: 2em
+        font-weight: bold
+
+
+
 
