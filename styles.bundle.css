@@ -70,35 +70,29 @@ header #navTickets #buyTickets {
 .PanelSectionContainer .PanelSection div {
   padding: 20px;
   border-radius: 20px 0px 0px 20px;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.3s ease-in-out;
 }
 .PanelSectionContainer .PanelSection div:hover {
   background-color: #577ae3;
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .PanelSectionContainer .PanelSection div:nth-child(2) {
   border-radius: 0px 0px 0px 0px;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.3s ease-in-out;
 }
 .PanelSectionContainer .PanelSection div:nth-child(2):hover {
   background-color: #5ebec0;
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .PanelSectionContainer .PanelSection div:nth-child(3) {
   border-radius: 0px 20px 20px 0px;
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.3s ease-in-out;
 }
 .PanelSectionContainer .PanelSection div:nth-child(3):hover {
   background-color: #c92538;
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .PanelSectionContainer .PanelSection h2 {
@@ -156,19 +150,16 @@ header #navTickets #buyTickets {
     margin: 20px auto;
   }
   #panelID .PanelSection div {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     background-color: #577ae3;
     border-radius: 20px 20px 0px 0px;
   }
   #panelID .PanelSection div:nth-child(2) {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     background-color: #5ebec0;
     border-radius: 0px 0px 0px 0px;
   }
   #panelID .PanelSection div:nth-child(3) {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     background-color: #c92538;
     border-radius: 0px 0px 20px 20px;
@@ -231,6 +222,11 @@ header #navVenue #navTicketsIcon {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 #venueHeroImage:hover {
@@ -242,23 +238,17 @@ header #navVenue #navTicketsIcon {
   font-size: 5em;
   color: white;
   display: flex;
-  height: 75vh;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
-#venueHeroImage #heroText {
+#venueHeroImage p {
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
   font-size: 1em;
   color: white;
   font-weight: 400;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 0px;
-}
-#venueHeroImage #heroText span {
-  font-family: "Yellowtail", cursive;
-  font-size: 5em;
 }
 
 .overview h2 {
@@ -274,6 +264,11 @@ header #navVenue #navTicketsIcon {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 #venueHeroImage2:hover {
@@ -285,25 +280,20 @@ header #navVenue #navTicketsIcon {
   font-size: 5em;
   color: white;
   display: flex;
-  height: 75vh;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
-#venueHeroImage2 #heroText2 {
+#venueHeroImage2 p {
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
   font-size: 1em;
   color: white;
   font-weight: 400;
   flex-direction: column;
-  justify-content: center;
-  margin-bottom: 0px;
-}
-#venueHeroImage2 #heroText2 span {
-  font-family: "Yellowtail", cursive;
-  font-size: 5em;
 }
 #venueHeroImage2 ul {
+  color: white;
   list-style: none;
   line-height: 2em;
   padding: 0px;
@@ -320,12 +310,17 @@ header #navVenue #navTicketsIcon {
 #venueHeroImage2 li a:hover {
   background: #171717;
 }
-#venueHeroImage2 p {
-  margin: 0px;
-}
 #venueHeroImage2 #penthouseHeading {
+  padding: 0px;
+  margin: 0px;
   line-height: 2em;
   font-weight: bold;
+}
+
+.WIP {
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
 }
 
 header #navAbout {
@@ -396,6 +391,11 @@ header #navAbout #buyTickets:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 #aboutHeroImage:hover {
@@ -407,12 +407,17 @@ header #navAbout #buyTickets:hover {
   font-size: 5em;
   color: white;
   display: flex;
-  height: 45vh;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
-#aboutHeroImage .heroPara {
+#aboutHeroImage p {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
   color: white;
+  font-weight: 400;
+  flex-direction: column;
 }
 
 .aboutDesc {
@@ -431,6 +436,11 @@ header #navAbout #buyTickets:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 #aboutHeroImage2:hover {
@@ -442,23 +452,17 @@ header #navAbout #buyTickets:hover {
   font-size: 5em;
   color: white;
   display: flex;
-  height: 45vh;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
-#aboutHeroImage2 #heroText2 {
+#aboutHeroImage2 p {
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
-  text-align: left;
   font-size: 1em;
   color: white;
   font-weight: 400;
   flex-direction: column;
-}
-#aboutHeroImage2 #heroText2 span {
-  font-family: "Yellowtail", cursive;
-  font-size: 5em;
-  justify-content: center;
-  align-items: center;
 }
 
 .accessibilitySection h3, .accessibilitySection h4 {
@@ -501,6 +505,11 @@ header #navAbout #buyTickets:hover {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 #aboutHeroImage3:hover {
@@ -512,24 +521,17 @@ header #navAbout #buyTickets:hover {
   font-size: 5em;
   color: white;
   display: flex;
-  height: 75vh;
   justify-content: center;
   align-items: center;
+  display: inline;
 }
-#aboutHeroImage3 #heroText3 {
+#aboutHeroImage3 p {
+  padding: 20px;
   font-family: "Montserrat", sans-serif;
-  margin: 0px;
-  text-align: left;
   font-size: 1em;
   color: white;
   font-weight: 400;
   flex-direction: column;
-}
-#aboutHeroImage3 #heroText3 span {
-  font-family: "Yellowtail", cursive;
-  font-size: 5em;
-  justify-content: center;
-  align-items: center;
 }
 #aboutHeroImage3 #visitButton {
   link-style: none;
@@ -552,6 +554,7 @@ header #navAbout #buyTickets:hover {
   border-radius: 7px;
 }
 #aboutHeroImage3 #visitButton span {
+  font-family: "Yellowtail", cursive;
   font-weight: 300;
   font-size: 1.1em;
 }
@@ -764,14 +767,12 @@ header #navAbout #buyTickets:hover {
   margin-bottom: 10px;
 }
 #featuredCars .featuredCarsPara {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.2s ease-in-out;
   font-size: 0.8em;
   font-weight: 400;
 }
 #featuredCars .featuredCarsPara:hover {
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 
@@ -814,12 +815,10 @@ header #navAbout #buyTickets:hover {
   transform: translateX(5px);
 }
 .callToAction #upcomingEventsCarousel {
-  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.2s ease-in-out;
 }
 .callToAction #upcomingEventsCarousel:hover {
-  -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
 }
 .callToAction #upcomingEventsCarousel img {
@@ -1099,7 +1098,6 @@ footer a:hover {
     padding-top: 15px;
   }
   #featuredCars .featuredCarsPara {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
     padding-bottom: 15px;
   }
@@ -1126,7 +1124,6 @@ footer a:hover {
     font-size: 2.5em;
   }
   #upcomingEventsSection #upcomingEventsCarousel {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #upcomingEventsCarousel #carouselExampleCaptions > .carousel-inner {
@@ -1166,7 +1163,6 @@ footer a:hover {
     padding-bottom: 0px;
   }
   #featuredCars .featuredThumbs {
-    -webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   #featuredCars .featuredCarsPara {

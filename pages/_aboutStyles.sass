@@ -9,6 +9,11 @@ $mainFont: 'Montserrat', sans-serif
         background-position: center
         background-repeat: no-repeat
         width: 100%
+        height: $textViewportHeight
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
         transition: all 0.3s ease-in-out
     
         &:hover
@@ -20,9 +25,17 @@ $mainFont: 'Montserrat', sans-serif
             font-size: 5em
             color: white
             display: flex
-            height: $textViewportHeight
             justify-content: center
             align-items: center
+            display: inline
+        
+        p
+            padding: 20px
+            font-family: $mainFont
+            font-size: 1em
+            color: white
+            font-weight: 400
+            flex-direction: column
 
 // Nav Styles for About Page
 header #navAbout
@@ -87,9 +100,6 @@ header #navAbout
 #aboutHeroImage
     @include heroBannerStyles('images/about-1.jpg', 45vh)
 
-    .heroPara
-        color: white
-
 .aboutDesc
     font-family: $mainFont
     text-align: left
@@ -100,19 +110,6 @@ header #navAbout
 
 #aboutHeroImage2
     @include heroBannerStyles('images/about-2.jpg', 45vh)
-
-    #heroText2
-        font-family: $mainFont
-        text-align: left
-        font-size: 1em
-        color: white
-        font-weight: 400
-        flex-direction: column
-        span
-            font-family: $logoFont
-            font-size: 5em
-            justify-content: center
-            align-items: center
 
 .accessibilitySection
     h3, h4
@@ -148,20 +145,6 @@ header #navAbout
 
 #aboutHeroImage3
     @include heroBannerStyles('images/about-3.jpg', 75vh)
-
-    #heroText3
-        font-family: $mainFont
-        margin: 0px
-        text-align: left
-        font-size: 1em
-        color: white
-        font-weight: 400
-        flex-direction: column
-        span
-            font-family: $logoFont
-            font-size: 5em
-            justify-content: center
-            align-items: center
     
     #visitButton
         link-style: none
@@ -182,6 +165,7 @@ header #navAbout
             background-color: white
             border-radius: 7px
         span
+            font-family: $logoFont
             font-weight: 300
             font-size: 1.1em
 

@@ -9,6 +9,11 @@ $mainFont: 'Montserrat', sans-serif
         background-position: center
         background-repeat: no-repeat
         width: 100%
+        height: $textViewportHeight
+        display: flex
+        justify-content: center
+        align-items: center
+        text-align: center
         transition: all 0.3s ease-in-out
     
         &:hover
@@ -20,10 +25,17 @@ $mainFont: 'Montserrat', sans-serif
             font-size: 5em
             color: white
             display: flex
-            height: $textViewportHeight
             justify-content: center
             align-items: center
-
+            display: inline
+        
+        p
+            padding: 20px
+            font-family: $mainFont
+            font-size: 1em
+            color: white
+            font-weight: 400
+            flex-direction: column
 
 // Nav Styles for Venue Page
 header #navVenue
@@ -73,19 +85,6 @@ header #navVenue
 #venueHeroImage
     @include heroBannerStyles('images/venue-1.jpg', 75vh)
 
-    #heroText
-        font-family: $mainFont
-        text-align: left
-        font-size: 1em
-        color: white
-        font-weight: 400
-        flex-direction: column
-        justify-content: center
-        margin-bottom: 0px
-        span
-            font-family: $logoFont
-            font-size: 5em
-
 .overview h2
         font-family: $logoFont
         font-size: 4em
@@ -94,20 +93,8 @@ header #navVenue
 #venueHeroImage2
     @include heroBannerStyles('images/venue-2.jpg', 75vh)
 
-    #heroText2
-        font-family: $mainFont
-        text-align: left
-        font-size: 1em
-        color: white
-        font-weight: 400
-        flex-direction: column
-        justify-content: center
-        margin-bottom: 0px
-        span
-            font-family: $logoFont
-            font-size: 5em
-    
     ul
+        color: white
         list-style: none
         line-height: 2em
         padding: 0px
@@ -123,13 +110,13 @@ header #navVenue
         &:hover
             background: #171717
     
-    p
-        margin: 0px
-    
     #penthouseHeading
+        padding: 0px
+        margin: 0px
         line-height: 2em
         font-weight: bold
 
-
-
-
+.WIP
+    font-size: 5em
+    font-weight: bold
+    text-align: center
