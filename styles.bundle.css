@@ -537,7 +537,7 @@ header #navVenue #navTicketsIcon {
 }
 .formSection input:focus {
   color: white;
-  background: rgba(255, 255, 255, 0.3725490196);
+  background: rgba(255, 255, 255, 0.3098039216);
   border: 1px solid white;
   box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
   -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
@@ -575,7 +575,7 @@ header #navVenue #navTicketsIcon {
 }
 .formSection select:focus {
   color: black;
-  background: rgba(255, 255, 255, 0.3725490196);
+  background: rgba(255, 255, 255, 0.3098039216);
   border: 1px solid white;
   box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
   -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
@@ -590,8 +590,8 @@ header #navVenue #navTicketsIcon {
   max-height: 150px;
 }
 .formSection .formLong:focus {
-  color: black;
-  background: rgba(255, 255, 255, 0.3725490196);
+  color: white;
+  background: rgba(255, 255, 255, 0.3098039216);
   border: 1px solid white;
   box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
   -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
@@ -616,8 +616,11 @@ header #navVenue #navTicketsIcon {
   transition: 0.3s ease-in-out;
 }
 .formSection .VformButton:hover {
-  background-color: rgba(0, 0, 0, 0.7137254902);
+  background-color: rgba(255, 255, 255, 0.3098039216);
   border: 1px solid white;
+  box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
+  -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
+  -moz-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
 }
 
 .WIP {
