@@ -38,16 +38,14 @@ $mainFont: 'Montserrat', sans-serif
             flex-direction: column
 
 @mixin inquiryButtonStyles
-    .inquiryButton
-        padding: 10px
-        margin-top: 20px
-        font-family: $mainFont
-        font-weight: regular
-        background: transparent
-        border: 1px solid white
-        transition: 0.3s ease-in-out
-
-@include inquiryButtonStyles
+    padding: 10px
+    margin-top: 20px
+    box-sizing: border-box
+    font-family: $mainFont
+    font-weight: regular
+    background: transparent
+    border: 1px solid white
+    transition: 0.3s ease-in-out
 
 // Nav Styles for Venue Page
 header #navVenue
@@ -118,6 +116,7 @@ header #navVenue
         font-weight: bold
 
     .inquiryButton
+        @include inquiryButtonStyles
         &:hover
             border: 1px solid white
             background-color: #0d0d0d2a
@@ -135,6 +134,7 @@ header #navVenue
         -webkit-filter: grayscale(0) //for Safari
     
     .inquiryButton
+        @include inquiryButtonStyles
         &:hover
             border: 1px solid white
             background-color: #fafafa34
@@ -154,7 +154,7 @@ header #navVenue
         width: 100%
         height: 100%
         border-radius: 5px
-        transition: 1s ease-in-out
+        transition: 2s ease-in-out
         &:hover
             transform: scale(1.1)
 
@@ -178,8 +178,130 @@ header #navVenue
         line-height: 2em
         padding: 0px
 
+.venueGridSection2
+    background: white
+    padding: 0px
+    padding-top: 30px
+    padding-bottom: 30px
+    filter: grayscale(1)
+    -webkit-filter: grayscale(1) //for Safari
+    transition: 0.3s ease-in-out
+    &:hover
+        filter: grayscale(0)
+        -webkit-filter: grayscale(0) //for Safari
+    
+    .inquiryButton2
+        @include inquiryButtonStyles
+        color: black
+        border: 1px solid black
+        &:hover
+            border: 1px solid black
+            color: black
+            background-color: #0000000c
+    
+    .memberButton
+        @include inquiryButtonStyles
+        color: white
+        background: black
+        border: 1px solid black
+        &:hover
+            border: 1px solid black
+            color: white
+            background-color: #222222e2
 
+.venueGridItem2
+    border-radius: 5px
+    img 
+        width: 100%
+        height: 100%
+        border-radius: 5px
+        transition: 2s ease-in-out
+        &:hover
+            transform: scale(1.1)
 
+.venueGridList2
+    text-align: center
+    padding-top: 10px
+
+    ul
+        color: black
+        list-style: none
+        line-height: 2em
+        padding: 0px
+
+#heroText4
+    color: black
+    font-family: $mainFont
+    font-family: $logoFont
+    padding: 0px
+    padding-bottom: 20px
+    font-size: 5em
+
+#venueHeroImage3
+    @include heroBannerStyles('images/form-bg.jpg', 60vh)
+
+.formSection
+    color: white
+    justify-content: left
+    align-items: left
+    text-align: left
+    padding-top: 10px
+    padding-bottom: 10px
+
+    .formDate
+        padding-left: 20px
+
+    span
+        color: red
+
+    label
+        padding: 0px
+        margin: 0px
+        font-size: 1em
+        padding: 10px
+
+    input
+        background: #ffffff2f
+        border: 1.5px solid white
+        border: 1px solid white
+        color: white
+        
+        &:focus
+            color: white
+            background: #ffffff5f
+            border: 1px solid white
+            box-shadow: 5px 6px 5px -5px #fdfdfdbf
+            -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
+            -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
+
+    input::placeholder
+        color: #edecec
+        font-family: $mainFont
+    
+    select 
+        background: transparent
+        border: 1.5px solid white
+        border: 1px solid white
+        color: white
+        
+        &:focus
+            color: black
+            background: #ffffff5f
+            border: 1px solid white
+            box-shadow: 5px 6px 5px -5px #fdfdfdbf
+            -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
+            -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
+    
+.formSection .VformButton
+    @include inquiryButtonStyles
+
+    padding: 10px
+    font-size: 1em
+    font-weight: regular
+    transition: 0.3s ease-in-out
+    &:hover
+        background-color: #000000b6 
+        border: 1px solid white
 
 .WIP
     font-size: 5em
