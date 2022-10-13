@@ -170,6 +170,16 @@ header #navTickets #buyTickets {
     justify-content: center;
   }
 }
+.inquiryButton {
+  padding: 10px;
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: regular;
+  background: transparent;
+  border: 1px solid white;
+  transition: 0.3s ease-in-out;
+}
+
 header #navVenue {
   background: transparent;
   border-bottom: 1px solid white;
@@ -298,23 +308,77 @@ header #navVenue #navTicketsIcon {
   line-height: 2em;
   padding: 0px;
 }
-#venueHeroImage2 li a {
-  padding: 10px;
-  margin-top: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: regular;
-  background: transparent;
-  border: 1px solid white;
-  transition: 0.2s ease-in-out;
-}
-#venueHeroImage2 li a:hover {
-  background: #171717;
-}
 #venueHeroImage2 #penthouseHeading {
   padding: 0px;
   margin: 0px;
   line-height: 2em;
   font-weight: bold;
+}
+#venueHeroImage2 .inquiryButton:hover {
+  border: 1px solid white;
+  background-color: rgba(13, 13, 13, 0.1647058824);
+}
+
+.venueGridSection {
+  background: black;
+  padding: 0px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition: 0.3s ease-in-out;
+}
+.venueGridSection:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+.venueGridSection .inquiryButton:hover {
+  border: 1px solid white;
+  background-color: rgba(250, 250, 250, 0.2039215686);
+}
+
+#heroText3 {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Yellowtail", cursive;
+  padding: 0px;
+  padding-bottom: 20px;
+  font-size: 5em;
+  color: white;
+}
+
+.venueGridItem {
+  border-radius: 5px;
+}
+.venueGridItem img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: 1s ease-in-out;
+}
+.venueGridItem img:hover {
+  transform: scale(1.1);
+}
+
+.venueGridCaptions {
+  padding: 0px;
+}
+.venueGridCaptions h5 {
+  font-weight: bold;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.venueGridList {
+  text-align: center;
+  padding-top: 10px;
+}
+.venueGridList ul {
+  color: white;
+  list-style: none;
+  line-height: 2em;
+  padding: 0px;
 }
 
 .WIP {

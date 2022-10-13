@@ -37,6 +37,18 @@ $mainFont: 'Montserrat', sans-serif
             font-weight: 400
             flex-direction: column
 
+@mixin inquiryButtonStyles
+    .inquiryButton
+        padding: 10px
+        margin-top: 20px
+        font-family: $mainFont
+        font-weight: regular
+        background: transparent
+        border: 1px solid white
+        transition: 0.3s ease-in-out
+
+@include inquiryButtonStyles
+
 // Nav Styles for Venue Page
 header #navVenue
     background: transparent
@@ -99,22 +111,75 @@ header #navVenue
         line-height: 2em
         padding: 0px
     
-    li a 
-        padding: 10px
-        margin-top: 20px
-        font-family: $mainFont
-        font-weight: regular
-        background: transparent
-        border: 1px solid white
-        transition: 0.2s ease-in-out
-        &:hover
-            background: #171717
-    
     #penthouseHeading
         padding: 0px
         margin: 0px
         line-height: 2em
         font-weight: bold
+
+    .inquiryButton
+        &:hover
+            border: 1px solid white
+            background-color: #0d0d0d2a
+
+.venueGridSection
+    background: black
+    padding: 0px
+    padding-top: 30px
+    padding-bottom: 30px
+    filter: grayscale(1)
+    -webkit-filter: grayscale(1) //for Safari
+    transition: 0.3s ease-in-out
+    &:hover
+        filter: grayscale(0)
+        -webkit-filter: grayscale(0) //for Safari
+    
+    .inquiryButton
+        &:hover
+            border: 1px solid white
+            background-color: #fafafa34
+
+#heroText3
+    font-family: $mainFont
+    font-family: $logoFont
+    padding: 0px
+    padding-bottom: 20px
+    font-size: 5em
+    color: white
+
+.venueGridItem
+    border-radius: 5px
+
+    img 
+        width: 100%
+        height: 100%
+        border-radius: 5px
+        transition: 1s ease-in-out
+        &:hover
+            transform: scale(1.1)
+
+.venueGridCaptions
+    padding: 0px
+
+    h5
+        font-weight: bold
+        font-size: 1em
+        letter-spacing: 1px
+        text-transform: uppercase
+        margin: 0px
+
+.venueGridList
+    text-align: center
+    padding-top: 10px
+
+    ul
+        color: white
+        list-style: none
+        line-height: 2em
+        padding: 0px
+
+
+
 
 .WIP
     font-size: 5em
