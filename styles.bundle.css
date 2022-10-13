@@ -480,7 +480,7 @@ header #navVenue #navTicketsIcon {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 60vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -526,7 +526,7 @@ header #navVenue #navTicketsIcon {
 .formSection label {
   margin: 0px;
   font-size: 1em;
-  padding: 10px;
+  padding: 15px;
   padding-left: 0px;
 }
 .formSection input {
@@ -555,8 +555,20 @@ header #navVenue #navTicketsIcon {
   color: #edecec;
   font-family: "Montserrat", sans-serif;
 }
+.formSection textarea::-moz-placeholder {
+  color: #edecec;
+  font-family: "Montserrat", sans-serif;
+}
+.formSection textarea:-ms-input-placeholder {
+  color: #edecec;
+  font-family: "Montserrat", sans-serif;
+}
+.formSection textarea::placeholder {
+  color: #edecec;
+  font-family: "Montserrat", sans-serif;
+}
 .formSection select {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.1843137255);
   border: 1.5px solid white;
   border: 1px solid white;
   color: white;
@@ -568,6 +580,25 @@ header #navVenue #navTicketsIcon {
   box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
   -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
   -moz-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
+}
+.formSection .formLong {
+  background: rgba(255, 255, 255, 0.1843137255);
+  border: 1.5px solid white;
+  color: white;
+  padding-bottom: 10px;
+  height: 30px;
+  max-height: 150px;
+}
+.formSection .formLong:focus {
+  color: black;
+  background: rgba(255, 255, 255, 0.3725490196);
+  border: 1px solid white;
+  box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
+  -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
+  -moz-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
+}
+.formSection .formSec2 {
+  border-top: 1px solid rgba(255, 255, 255, 0.1960784314);
 }
 
 .formSection .VformButton {

@@ -238,7 +238,7 @@ header #navVenue
     font-size: 5em
 
 #venueHeroImage3
-    @include heroBannerStyles('images/form-bg.jpg', 60vh)
+    @include heroBannerStyles('images/form-bg.jpg', 85vh)
 
 .formSection
     color: white
@@ -257,7 +257,7 @@ header #navVenue
     label
         margin: 0px
         font-size: 1em
-        padding: 10px
+        padding: 15px
         padding-left: 0px
 
     input
@@ -277,9 +277,13 @@ header #navVenue
     input::placeholder
         color: #edecec
         font-family: $mainFont
+
+    textarea::placeholder
+        color: #edecec
+        font-family: $mainFont
     
     select 
-        background: transparent
+        background: #ffffff2f
         border: 1.5px solid white
         border: 1px solid white
         color: white
@@ -291,6 +295,25 @@ header #navVenue
             box-shadow: 5px 6px 5px -5px #fdfdfdbf
             -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
             -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
+
+    .formLong
+        background: #ffffff2f
+        border: 1.5px solid white
+        color: white
+        padding-bottom: 10px
+        height: 30px
+        max-height: 150px
+        
+        &:focus
+            color: black
+            background: #ffffff5f
+            border: 1px solid white
+            box-shadow: 5px 6px 5px -5px #fdfdfdbf
+            -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
+            -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
+    
+    .formSec2
+        border-top: 1px solid #ffffff32
     
 .formSection .VformButton
     @include inquiryButtonStyles
