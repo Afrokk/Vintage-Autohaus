@@ -170,6 +170,10 @@ header #navTickets #buyTickets {
     justify-content: center;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 header #navVenue {
   background: transparent;
   border-bottom: 1px solid white;
@@ -473,7 +477,7 @@ header #navVenue #navTicketsIcon {
   font-size: 5em;
 }
 
-#venueHeroImage3 {
+.venueHeroImage3 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/form-bg.jpg");
   filter: grayscale(1);
   background-size: cover;
@@ -487,11 +491,11 @@ header #navVenue #navTicketsIcon {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
-#venueHeroImage3:hover {
+.venueHeroImage3:hover {
   filter: grayscale(0);
   webkit-filter: grayscale(0);
 }
-#venueHeroImage3 .heroText {
+.venueHeroImage3 .heroText {
   font-family: "Yellowtail", cursive;
   font-size: 5em;
   color: white;
@@ -500,7 +504,7 @@ header #navVenue #navTicketsIcon {
   align-items: center;
   display: inline;
 }
-#venueHeroImage3 p {
+.venueHeroImage3 p {
   padding: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 1em;
