@@ -518,16 +518,16 @@ header #navVenue #navTicketsIcon {
   padding-bottom: 10px;
 }
 .formSection .formDate {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 .formSection span {
   color: red;
 }
 .formSection label {
-  padding: 0px;
   margin: 0px;
   font-size: 1em;
   padding: 10px;
+  padding-left: 0px;
 }
 .formSection input {
   background: rgba(255, 255, 255, 0.1843137255);
