@@ -274,6 +274,14 @@ header #navVenue
             -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
             -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
 
+    input[type=number] 
+        -moz-appearance: textfield
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button 
+        -webkit-appearance: none
+        margin: 0px
+
     input::placeholder
         color: #edecec
         font-family: $mainFont
@@ -289,7 +297,6 @@ header #navVenue
         color: white
         
         &:focus
-            color: black
             background: #ffffff4f
             border: 1px solid white
             box-shadow: 5px 6px 5px -5px #fdfdfdbf

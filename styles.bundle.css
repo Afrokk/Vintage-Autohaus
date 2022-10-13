@@ -543,6 +543,14 @@ header #navVenue #navTicketsIcon {
   -webkit-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
   -moz-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
 }
+.formSection input[type=number] {
+  -moz-appearance: textfield;
+}
+.formSection input::-webkit-outer-spin-button,
+.formSection input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0px;
+}
 .formSection input::-moz-placeholder {
   color: #edecec;
   font-family: "Montserrat", sans-serif;
@@ -574,7 +582,6 @@ header #navVenue #navTicketsIcon {
   color: white;
 }
 .formSection select:focus {
-  color: black;
   background: rgba(255, 255, 255, 0.3098039216);
   border: 1px solid white;
   box-shadow: 5px 6px 5px -5px rgba(253, 253, 253, 0.7490196078);
