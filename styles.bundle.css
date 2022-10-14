@@ -225,9 +225,9 @@ header #navVenue #navTicketsIcon {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 75vh;
+  height: 75%;
   display: flex;
+  padding: 0px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -255,6 +255,11 @@ header #navVenue #navTicketsIcon {
   flex-direction: column;
 }
 
+#heroTextMain {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .overview h2 {
   font-family: "Yellowtail", cursive;
   font-size: 4em;
@@ -267,9 +272,9 @@ header #navVenue #navTicketsIcon {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 75vh;
+  height: 75%;
   display: flex;
+  padding: 0px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -321,6 +326,11 @@ header #navVenue #navTicketsIcon {
 #venueHeroImage2 .inquiryButton:hover {
   border: 1px solid white;
   background-color: rgba(13, 13, 13, 0.1647058824);
+}
+
+#heroTextMain2 {
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .venueGridSection {
@@ -483,9 +493,9 @@ header #navVenue #navTicketsIcon {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 130vh;
+  height: 100%;
   display: flex;
+  padding: 0px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -649,6 +659,11 @@ header #navVenue #navTicketsIcon {
   -moz-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
 }
 
+#formCont {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 @media screen and (max-width: 768px) {
   #venueHeroImage, #venueHeroImage2, .venueHeroImage3 {
     filter: grayscale(0);
@@ -657,6 +672,27 @@ header #navVenue #navTicketsIcon {
   .venueGridSection, .venueGridSection2 {
     filter: grayscale(0);
     -webkit-filter: grayscale(0);
+  }
+  #venueHeroImage {
+    height: 100%;
+  }
+  #venueHeroImage2 {
+    height: 100%;
+  }
+  .venueHeroImage3 {
+    height: 100%;
+  }
+  #heroTextMain {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #heroTextMain2 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+  #formCont {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
   .overview {
     font-size: 0.9em;
@@ -669,16 +705,6 @@ header #navVenue #navTicketsIcon {
   }
 }
 @media screen and (max-width: 500px) {
-  #venueHeroImage {
-    height: 150vh;
-  }
-  #venueHeroImage2 {
-    height: 150vh;
-  }
-  .venueHeroImage3 {
-    overflow: auto;
-    height: 200vh;
-  }
   #heroTextMain #heroText {
     font-size: 3em;
   }
@@ -731,9 +757,6 @@ header #navVenue #navTicketsIcon {
   }
   .venueGridCont2 .memberButton {
     font-size: 0.9em;
-  }
-  #formCont {
-    max-height: inherit;
   }
   #formCont label {
     font-size: 0.9em;

@@ -8,9 +8,9 @@ $mainFont: 'Montserrat', sans-serif
         background-size: cover
         background-position: center
         background-repeat: no-repeat
-        width: 100%
         height: $textViewportHeight
         display: flex
+        padding: 0px
         justify-content: center
         align-items: center
         text-align: center
@@ -97,7 +97,11 @@ header #navVenue
 
 //Hero Section
 #venueHeroImage
-    @include heroBannerStyles('images/venue-1.jpg', 75vh)
+    @include heroBannerStyles('images/venue-1.jpg', 75%)
+
+#heroTextMain 
+    padding-top: 150px
+    padding-bottom: 150px
 
 .overview h2
         font-family: $logoFont
@@ -106,7 +110,7 @@ header #navVenue
 
 //Section 2
 #venueHeroImage2
-    @include heroBannerStyles('images/venue-2.jpg', 75vh)
+    @include heroBannerStyles('images/venue-2.jpg', 75%)
 
     ul
         color: white
@@ -125,6 +129,10 @@ header #navVenue
         &:hover
             border: 1px solid white
             background-color: #0d0d0d2a
+
+#heroTextMain2 
+    padding-top: 150px
+    padding-bottom: 150px
 
 //Section 3
 .venueGridSection
@@ -246,7 +254,7 @@ header #navVenue
 
 //Section 5
 .venueHeroImage3
-    @include heroBannerStyles('images/form-bg.jpg', 130vh)
+    @include heroBannerStyles('images/form-bg.jpg', 100%)
 
 .formSection
     color: white
@@ -274,7 +282,6 @@ header #navVenue
             content: "YYYY"
             color: white
             font-size: 0.8em
-
 
     span
         color: red
@@ -344,7 +351,6 @@ header #navVenue
             -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
             -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
 
-    
     .formSec2
         border-top: 1px solid #ffffff32
     
@@ -362,6 +368,10 @@ header #navVenue
         -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
         -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
 
+#formCont
+    padding-top: 50px
+    padding-bottom: 50px
+
 //Media Query for tablets
 @media screen and (max-width: 768px)
     #venueHeroImage, #venueHeroImage2, .venueHeroImage3
@@ -371,6 +381,27 @@ header #navVenue
     .venueGridSection, .venueGridSection2
         filter: grayscale(0)
         -webkit-filter: grayscale(0) //for Safari
+
+    #venueHeroImage
+        height: 100%
+
+    #venueHeroImage2
+        height: 100%
+
+    .venueHeroImage3
+        height: 100%
+
+    #heroTextMain 
+        padding-top: 100px
+        padding-bottom: 50px
+
+    #heroTextMain2
+        padding-top: 100px
+        padding-bottom: 50px
+
+    #formCont
+        padding-top: 40px
+        padding-bottom: 40px
 
     .overview
         font-size: 0.9em
@@ -383,16 +414,6 @@ header #navVenue
 
 //Media Query for mobile
 @media screen and (max-width: 500px)
-    #venueHeroImage
-        height: 150vh
-
-    #venueHeroImage2
-        height: 150vh
-
-    .venueHeroImage3
-        overflow: auto
-        height: 200vh
-
     #heroTextMain 
         #heroText
             font-size: 3em
@@ -449,7 +470,6 @@ header #navVenue
         font-size: 0.9em
 
     #formCont
-        max-height: inherit
         label
             font-size: 0.9em
 
