@@ -58,9 +58,8 @@ Some of the things I'd like to do with this project, as I work on it:
 - [x] Complete Home Page.
 - [x] Complete About Page. 
 - [x] Complete Tickets Page.
-- [ ] Complete Venue Page. (In Progress)
-- [ ] Optimize.
-
+- [x] Complete Venue Page. 
+- [ ] Optimize. (In Progress)
 
 ## Contact
 
