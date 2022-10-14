@@ -676,6 +676,7 @@ header #navVenue #navTicketsIcon {
     height: 150vh;
   }
   .venueHeroImage3 {
+    overflow: auto;
     height: 200vh;
   }
   #heroTextMain #heroText {
@@ -730,6 +731,9 @@ header #navVenue #navTicketsIcon {
   }
   .venueGridCont2 .memberButton {
     font-size: 0.9em;
+  }
+  #formCont {
+    max-height: inherit;
   }
   #formCont label {
     font-size: 0.9em;
