@@ -20,7 +20,7 @@ $mainFont: 'Montserrat', sans-serif
             filter: grayscale(0)
             webkit-filter: grayscale(0) //for Safari
 
-        .heroText
+        .VheroText
             font-family: $logoFont
             font-size: 5em
             color: white
@@ -95,6 +95,7 @@ header #navVenue
             font-weight: 400
             color: white
 
+//Hero Section
 #venueHeroImage
     @include heroBannerStyles('images/venue-1.jpg', 75vh)
 
@@ -103,6 +104,7 @@ header #navVenue
         font-size: 4em
         padding: 15px
 
+//Section 2
 #venueHeroImage2
     @include heroBannerStyles('images/venue-2.jpg', 75vh)
 
@@ -124,6 +126,7 @@ header #navVenue
             border: 1px solid white
             background-color: #0d0d0d2a
 
+//Section 3
 .venueGridSection
     background: black
     padding: 0px
@@ -181,6 +184,7 @@ header #navVenue
         line-height: 2em
         padding: 0px
 
+//Section 4
 .venueGridSection2
     background: white
     padding: 0px
@@ -240,8 +244,9 @@ header #navVenue
     padding-bottom: 20px
     font-size: 5em
 
+//Section 5
 .venueHeroImage3
-    @include heroBannerStyles('images/form-bg.jpg', 85vh)
+    @include heroBannerStyles('images/form-bg.jpg', 130vh)
 
 .formSection
     color: white
@@ -253,6 +258,23 @@ header #navVenue
 
     .formDate
         padding-left: 10px
+
+    .formDateCont
+        div:nth-child(2)::after
+            content: "MM"
+            color: white
+            font-size: 0.8em
+        
+        div:nth-child(3)::after
+            content: "DD"
+            color: white
+            font-size: 0.8em
+
+        div:nth-child(4)::after
+            content: "YYYY"
+            color: white
+            font-size: 0.8em
+
 
     span
         color: red
@@ -340,7 +362,91 @@ header #navVenue
         -webkit-box-shadow: 5px 6px 5px -5px #ffffffbf
         -moz-box-shadow: 5px 6px 5px -5px #ffffffbf
 
-.WIP
-    font-size: 5em
-    font-weight: bold
-    text-align: center
+//Media Query for tablets
+@media screen and (max-width: 768px)
+    #venueHeroImage, #venueHeroImage2, .venueHeroImage3
+        filter: grayscale(0)
+        -webkit-filter: grayscale(0) //for Safari
+
+    .venueGridSection, .venueGridSection2
+        filter: grayscale(0)
+        -webkit-filter: grayscale(0) //for Safari
+
+    .overview
+        font-size: 0.9em
+
+    #heroTextMain2 #heroText2
+        font-size: 3.5em
+
+    #heroText3, #heroText4, #heroText5
+        font-size: 3.0em
+
+//Media Query for mobile
+@media screen and (max-width: 500px)
+    #venueHeroImage
+        height: 150vh
+
+    #venueHeroImage2
+        height: 150vh
+
+    .venueHeroImage3
+        height: 200vh
+
+    #heroTextMain 
+        #heroText
+            font-size: 3em
+        
+        p
+            padding: 0px
+            padding-top: 10px
+            font-size: 0.9em
+
+    #heroTextMain2
+        #heroText2
+            font-size: 2.5em
+        
+        p
+            padding: 0px
+            padding-top: 10px
+            font-size: 0.9em
+
+        ul
+            padding: 0px
+            padding-top: 10px
+            font-size: 0.9em 
+
+        a
+            font-size: 0.9em
+
+    .overview
+        font-size: 0.7em
+
+    #heroText3, #heroText4, #heroText5
+        font-size: 2em
+
+    .venueGridItem
+        font-size: 0.8em
+    
+    .venueGridList
+        font-size: 0.9em
+
+    .venueGridCont .inquiryButton
+        font-size: 0.9em
+
+    .venueGridItem2
+        font-size: 0.8em
+    
+    .venueGridList2
+        font-size: 0.9em
+
+    .venueGridCont2 .inquiryButton2
+        font-size: 0.9em
+        padding-left: 25px
+        padding-right: 25px
+
+    .venueGridCont2 .memberButton
+        font-size: 0.9em
+
+    #formCont
+        label
+            font-size: 0.9em
