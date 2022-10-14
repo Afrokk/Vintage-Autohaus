@@ -139,7 +139,7 @@ header #navTickets #buyTickets {
   transform: translateX(-5px);
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #ticketsHText #ticketsHHero {
     font-size: 2.5em;
   }
@@ -237,7 +237,7 @@ header #navVenue #navTicketsIcon {
   filter: grayscale(0);
   webkit-filter: grayscale(0);
 }
-#venueHeroImage .heroText {
+#venueHeroImage .VheroText {
   font-family: "Yellowtail", cursive;
   font-size: 5em;
   color: white;
@@ -279,7 +279,7 @@ header #navVenue #navTicketsIcon {
   filter: grayscale(0);
   webkit-filter: grayscale(0);
 }
-#venueHeroImage2 .heroText {
+#venueHeroImage2 .VheroText {
   font-family: "Yellowtail", cursive;
   font-size: 5em;
   color: white;
@@ -484,7 +484,7 @@ header #navVenue #navTicketsIcon {
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 85vh;
+  height: 130vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -495,7 +495,7 @@ header #navVenue #navTicketsIcon {
   filter: grayscale(0);
   webkit-filter: grayscale(0);
 }
-.venueHeroImage3 .heroText {
+.venueHeroImage3 .VheroText {
   font-family: "Yellowtail", cursive;
   font-size: 5em;
   color: white;
@@ -523,6 +523,21 @@ header #navVenue #navTicketsIcon {
 }
 .formSection .formDate {
   padding-left: 10px;
+}
+.formSection .formDateCont div:nth-child(2)::after {
+  content: "MM";
+  color: white;
+  font-size: 0.8em;
+}
+.formSection .formDateCont div:nth-child(3)::after {
+  content: "DD";
+  color: white;
+  font-size: 0.8em;
+}
+.formSection .formDateCont div:nth-child(4)::after {
+  content: "YYYY";
+  color: white;
+  font-size: 0.8em;
 }
 .formSection span {
   color: red;
@@ -634,12 +649,92 @@ header #navVenue #navTicketsIcon {
   -moz-box-shadow: 5px 6px 5px -5px rgba(255, 255, 255, 0.7490196078);
 }
 
-.WIP {
-  font-size: 5em;
-  font-weight: bold;
-  text-align: center;
+@media screen and (max-width: 768px) {
+  #venueHeroImage, #venueHeroImage2, .venueHeroImage3 {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+  .venueGridSection, .venueGridSection2 {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+  }
+  .overview {
+    font-size: 0.9em;
+  }
+  #heroTextMain2 #heroText2 {
+    font-size: 3.5em;
+  }
+  #heroText3, #heroText4, #heroText5 {
+    font-size: 3em;
+  }
 }
-
+@media screen and (max-width: 500px) {
+  #venueHeroImage {
+    height: 150vh;
+  }
+  #venueHeroImage2 {
+    height: 150vh;
+  }
+  .venueHeroImage3 {
+    height: 200vh;
+  }
+  #heroTextMain #heroText {
+    font-size: 3em;
+  }
+  #heroTextMain p {
+    padding: 0px;
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+  #heroTextMain2 #heroText2 {
+    font-size: 2.5em;
+  }
+  #heroTextMain2 p {
+    padding: 0px;
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+  #heroTextMain2 ul {
+    padding: 0px;
+    padding-top: 10px;
+    font-size: 0.9em;
+  }
+  #heroTextMain2 a {
+    font-size: 0.9em;
+  }
+  .overview {
+    font-size: 0.7em;
+  }
+  #heroText3, #heroText4, #heroText5 {
+    font-size: 2em;
+  }
+  .venueGridItem {
+    font-size: 0.8em;
+  }
+  .venueGridList {
+    font-size: 0.9em;
+  }
+  .venueGridCont .inquiryButton {
+    font-size: 0.9em;
+  }
+  .venueGridItem2 {
+    font-size: 0.8em;
+  }
+  .venueGridList2 {
+    font-size: 0.9em;
+  }
+  .venueGridCont2 .inquiryButton2 {
+    font-size: 0.9em;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .venueGridCont2 .memberButton {
+    font-size: 0.9em;
+  }
+  #formCont label {
+    font-size: 0.9em;
+  }
+}
 header #navAbout {
   background: transparent;
   border-bottom: 1px solid black;
@@ -903,7 +998,7 @@ header #navAbout #buyTickets:hover {
   padding-bottom: 20px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3 {
     filter: grayscale(0);
     webkit-filter: grayscale(0);
@@ -931,7 +1026,7 @@ header #navAbout #buyTickets:hover {
     padding-left: 15px;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3 {
     font-size: 1em;
   }
@@ -1409,7 +1504,7 @@ footer a:hover {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   #featuredCars {
     padding: 100px;
     padding-top: 15px;
@@ -1469,7 +1564,7 @@ footer a:hover {
     padding-bottom: 25px;
   }
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   #featuredCars {
     padding: 40px;
     padding-top: 15px;

@@ -78,6 +78,7 @@ header #navAbout
             font-weight: 400
             color: white
 
+//Heading 
 #aboutHText
     padding-top: 5rem
 
@@ -97,6 +98,7 @@ header #navAbout
         background-color: black
         color: white
 
+//Section 1
 #aboutHeroImage
     @include heroBannerStyles('images/about-1.jpg', 45vh)
 
@@ -108,9 +110,11 @@ header #navAbout
     font-weight: 400
     margin: 20px 0px
 
+//Section 2
 #aboutHeroImage2
     @include heroBannerStyles('images/about-2.jpg', 45vh)
 
+//Section 3
 .accessibilitySection
     h3, h4
         font-family: $logoFont
@@ -143,6 +147,7 @@ header #navAbout
             color: red
             transform: translateX(5px)
 
+//Section 4
 #aboutHeroImage3
     @include heroBannerStyles('images/about-3.jpg', 75vh)
     
@@ -169,6 +174,7 @@ header #navAbout
             font-weight: 300
             font-size: 1.1em
 
+//Section 5
 #sponsorSection
     max-width: 65vw
     min-width: 45vw
@@ -195,7 +201,7 @@ header #navAbout
         padding-bottom: 20px
 
 //Media Query for tablets
-@media (max-width: 768px)
+@media screen and (max-width: 768px)
 
     #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3
         filter: grayscale(0)
@@ -225,7 +231,7 @@ header #navAbout
             padding-left: 15px
 
 //Media Query for mobile
-@media (max-width: 500px)
+@media screen and (max-width: 500px)
     
     #aboutHeroImage, #aboutHeroImage2, #aboutHeroImage3
         font-size: 1em
