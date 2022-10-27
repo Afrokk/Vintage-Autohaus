@@ -43,42 +43,44 @@ Utilized SASS for CSS compiling, bundling and optimizations, jQuery for some ani
 Here's a look at the design of the website on different devices.
 
 ### Desktop Version
-<summary>View Desktop Version</summary>
-<p align="center">
-  <img src="images/DesktopPreview.png">
-</p>
+<details>
+  <summary>View Desktop Version</summary>
+  <p align="center">
+    <img src="images/DesktopPreview.png">
+  </p>
+</details>
 
 ### Mobile Version
 <details>
-<summary>View Mobile Version</summary>
-<p align="center">
-  <img src="images/MobilePreview.png">
-</p>
+  <summary>View Mobile Version</summary>
+  <p align="center">
+    <img src="images/MobilePreview.png">
+  </p>
 </details>
 
 ### Venue Page
 <details>
-<summary>View Venue Page</summary>
-<p align="center">
-  <img src="images/MobilePreview.png">
-</p>
+  <summary>View Venue Page</summary>
+  <p align="center">
+    <img src="images/MobilePreview.png">
+  </p>
 </details>
 
 ### Tickets Page
 <details>
-<summary>View Tickets Page</summary>
-<p align="center">
-  <img src="images/MobilePreview.png">
-</p>
+  <summary>View Tickets Page</summary>
+  <p align="center">
+    <img src="images/MobilePreview.png">
+  </p>
 </details>
 
 ### About Page
 <details>
-<summary>View About Page</summary>
-## View it LIVE by clicking <a href="">here</a>.
-<p align="center">
-  <img src="images/MobilePreview.png">
-</p>
+  <summary>View About Page</summary>
+  <h3> View it LIVE by clicking <a href="">here</a></h3>
+  <p align="center">
+    <img src="images/MobilePreview.png">
+  </p>
 </details>
 
 ## To-Do
