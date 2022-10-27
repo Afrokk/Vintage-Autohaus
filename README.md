@@ -97,7 +97,7 @@ Some of the things I'd like to do with this project, as I work on it:
 - [x] Complete About Page. 
 - [x] Complete Tickets Page.
 - [x] Complete Venue Page. 
-- [ ] Optimize. (In Progress)
+- [x] Optimize. - PROJECT COMPLETED.
 
 ## Contact
 
