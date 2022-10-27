@@ -48,7 +48,7 @@ Here's a look at the design of the website on different devices.
 ### Desktop Version
 <details>
   <summary>View Desktop Version</summary>
-  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/">here</a></h4>
+  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/ target="_blank>here</a></h4>
   <p align="center">
     <img src="images/DesktopPreview.png">
   </p>
@@ -57,7 +57,7 @@ Here's a look at the design of the website on different devices.
 ### Mobile Version
 <details>
   <summary>View Mobile Version</summary>
-  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/">here</a></h4>
+  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/" target="_blank">here</a></h4>
   <p align="center">
     <img src="images/MobilePreview.png">
   </p>
@@ -66,7 +66,7 @@ Here's a look at the design of the website on different devices.
 ### Venue Page
 <details>
   <summary>View Venue Page</summary>
-  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/pages/venue.html">here</a></h4>
+  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/pages/venue.html" target="_blank">here</a></h4>
   <p align="center">
     <img src="images/venue-page.png">
   </p>
@@ -75,7 +75,7 @@ Here's a look at the design of the website on different devices.
 ### Tickets Page
 <details>
   <summary>View Tickets Page</summary>
-  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/pages/tickets.html">here</a></h4>
+  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/pages/tickets.html" target="_blank">here</a></h4>
   <p align="center">
     <img src="images/tickets-page.png">
   </p>
@@ -84,7 +84,7 @@ Here's a look at the design of the website on different devices.
 ### About Page
 <details>
   <summary>View About Page</summary>
-  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/pages/about.html">here</a></h4>
+  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/pages/about.html" target="_blank">here</a></h4>
   <p align="center">
     <img src="images/about-page.png">
   </p>
