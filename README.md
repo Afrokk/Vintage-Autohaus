@@ -22,12 +22,14 @@ A fully responsive, scalable website built from scratch for an Automotive Museum
 
 * Fully web optimized, for fast load times.
 * Fully scalable code. Can be coupled with a back-end and a database in the future.
-* Bundled styles using the SASS compiler. This helps with performance.
-* Reused elements and styles along with certain components (Like buttons & forms).
+* Bundled styles file using the SASS compiler. This helps with performance.
+* Reusable Mixins for easy styling.
+* Reusable elements and styles along with certain components (Like buttons & forms).
 * Custom style files for individual pages. 
 * Utilized JavaScript to generate repetitive HTML code.
 * Supports all devices, fully responsive.
 * Dynamic NavBar.
+* Screen-reader frindly.
 
 ## Built With
 

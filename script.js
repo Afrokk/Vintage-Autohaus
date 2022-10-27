@@ -45,4 +45,5 @@ const imgElement = document.querySelectorAll(".sImages");
 
 for (let i = 1; i < 17; i++) {
   imgElement[i-1].src = `../images/sponsor-${i}.png`;
+  imgElement[i-1].alt = `Sponsor Logo Image.`;
 }
