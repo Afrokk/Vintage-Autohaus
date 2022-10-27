@@ -48,7 +48,7 @@ Here's a look at the design of the website on different devices.
 ### Desktop Version
 <details>
   <summary>View Desktop Version</summary>
-  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/ target="_blank>here</a></h4>
+  <h4 align="center"> View it LIVE by clicking <a href="https://afrokk.github.io/Vintage-Autohaus/" target="_blank">here</a></h4>
   <p align="center">
     <img src="images/DesktopPreview.png">
   </p>
