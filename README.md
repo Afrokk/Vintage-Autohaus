@@ -29,7 +29,7 @@ A fully responsive, scalable website built from scratch for an Automotive Museum
 * Utilized JavaScript to generate repetitive HTML code.
 * Supports all devices, fully responsive.
 * Dynamic NavBar.
-* Screen-reader frindly.
+* Screen-reader friendly.
 
 ## Built With
 
